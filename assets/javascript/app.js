@@ -10,7 +10,10 @@ $(document).ready(function() {
 
 	//start quiz function
 	function startQuiz() {
+		//sets counter to begin decrementing
 		counter = setInterval(decrement, 1000);
+		//runs randomQuestion function to fill quiz with questions
+		randomQuestions();
 	}
 	//decrement function
 	function decrement() {
@@ -32,6 +35,12 @@ $(document).ready(function() {
 	function quizFinished() {
 		clearInterval(counter);
 		$("#quizTimer").empty();
+	}
+
+	function randomQuestions() {
+		return {
+			
+		}
 	}
 
 });
