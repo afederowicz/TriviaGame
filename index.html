@@ -3,6 +3,9 @@
 <head>
 	<title>Trivia Game</title>
 
+    <!-- jQuery Link -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -11,6 +14,7 @@
 	
 	<!-- linked CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 	
 </head>
 
@@ -18,14 +22,15 @@
 
 	<div class="container">
 		<div class="row"> 
-			<div class="panel panel-default"> 
-				<div class="panel-body text-center" id="quizTitle">> 
+			<div class="panel panel-default" id="quiz-container"> 
+				<div class="panel-body text-center" id="quizTitle">
 					<h1>Star Wars Trivia!</h1>
 					
 				</div>
+				<div class="panel-body text-center" id="quizTimer"></div>
 				<div class="panel-body text-center" id="quizContent"> 
 				
-					<button type="button" class="btn btn-danger btn-lg btn-block">Start!</button>
+					<button type="button" class="btn btn-danger btn-lg btn-block" id="start">Start!</button>
 				</div>
 			</div>
 		</div>

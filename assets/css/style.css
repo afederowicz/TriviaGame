@@ -5,3 +5,10 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+#quiz-container {
+
+	padding: 10px;
+	margin-bottom: 30px;
+	font-family: 'Press Start 2P', cursive;
+}
